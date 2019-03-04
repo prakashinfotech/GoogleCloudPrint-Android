@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.psspl.googlecloudprintexample.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtsing"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:text="For Google Cloud Printing, You need to Login with Google Account and allow Printing rights. After singIn, Please click on Print Ticket Button. Make sure you have configured cloud printer with your google account."
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnPrintTicket"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:text="Print Your Ticket" />
+
+</LinearLayout>
